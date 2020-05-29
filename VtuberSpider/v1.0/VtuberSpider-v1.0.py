@@ -391,9 +391,10 @@ def main():
     wb = Workbook()
     ws = wb.active
     ws.title = 'Information'
-    ws['A1'] = 'CopyRight:'
+    ws['A1'] = 'Information:'
     ws['A2'] = 'Author: xiluo_shiro'
     ws['A3'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    ws['A5'] = 'Copyright [2020] [xiluo_shiro]'
 
     ws1 = wb.create_sheet('Niconico')
     ws1 = title_excel(ws1)
